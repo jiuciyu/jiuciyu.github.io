@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>WordPress 主题所需的工具和准备 | 小良博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://jiuciyu.github.io/favicon.ico?v=1629093300540">
+<link rel="stylesheet" href="https://jiuciyu.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="开始真正制作主题之前，你需要使用到下面这些工具：
+为了测试方便和快速，你首先需要在本地安装 WordPress，至于如何在 Windows 系统上安装 WordPress，你可以参考这篇日志：在 WordPress 本地安装 WordPre..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://jiuciyu.github.io">
+        <img src="https://jiuciyu.github.io/images/avatar.png?v=1629093300540" class="site-logo">
+        <h1 class="site-title">小良博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一个专注于wordpress技术的博客
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/jiuciyu/jiuciyu" target="_blank">小良博客</a> | <a class="rss" href="https://jiuciyu.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">WordPress 主题所需的工具和准备</h2>
+            <div class="post-date">2021-08-16</div>
+            
+              <div class="feature-container" style="background-image: url('https://jiuciyu.github.io/post-images/wordpress-zhu-ti-suo-xu-de-gong-ju-he-zhun-bei.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>开始真正制作主题之前，你需要使用到下面这些工具：</p>
+<p>为了测试方便和快速，你首先需要在本地安装 WordPress，至于如何在 Windows 系统上安装 WordPress，你可以参考这篇日志：在 WordPress 本地安装 WordPress。<br>
+如果由于某种原因不能在本地安装 WordPress，那么你也可以的服务器上安装一个测试版的 WordPress。这个时候你必须要有一个支持 WordPress 主机的服务器，一般我使用 LAMP 主机（Linux+Apache+MySQL+PHP）主机，Win+IIS 主机可能会有很多问题，调试也比较麻烦，而 LAMP 主机，从我个人使用经验来说，我推荐 (MT) Media Temple 主机。<br>
+代码编辑工具，如 NotePad++ 或者 Vim 都可以，主要是适合自己个人使用习惯。<br>
+FTP 工具，用于上传主题到服务器上测试，这方面的工具很多，如 Filezilla，SmartFTP 等，如果你先安装软件麻烦（对啊，现在是云计算时代，谁还装软件），你也可以安装 Firefox 的 FTP 扩展，Fireftp，直接在 Firefox 中上传文件到服务器上。<br>
+XHTML 验证器和 CSS 验证器。你将需要这些工具去验证你的主题是否符合 XHTML 和 CSS 标准，并且可以使用它查出奇正错误的地方。<img src="https://jiuciyu.github.io/post-images/1629093297194.jpg" alt="" loading="lazy"></p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://jiuciyu.github.io/post/shi-yong-gridea-ban-nian-lai-de-gan-shou/">
+                  <h3 class="post-title">
+                    使用Gridea半年来的感受
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
